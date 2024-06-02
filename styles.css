@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+
+  color: black;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.header {
+  background-image: linear-gradient(to top right, red, yellow);
+  max-height: 100px;
+
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  font-size: 20px;
+}
+
+.menu__item--link {
+  transition: color 0.3s ease-in;
+}
+
+.menu__item--link:hover {
+  color: white;
+}
+
+.main {
+  background-color: blanchedalmond;
+  padding: 10px;
+}
+
+.main__text {
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main__buttons {
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__btn--primary {
+  padding: 10px;
+  min-width: 100px;
+
+  border: 2px solid rgb(11, 0, 227);
+  border-radius: 10px;
+  background-color: rgb(243, 163, 15);
+}
+
+.main__btn {
+  padding: 10px;
+  min-width: 100px;
+
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(42, 50, 48);
+}
+
+.btn__link--primary {
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  transition: color 0.5s ease-in-out;
+}
+
+.btn__link--primary:hover {
+  color: white;
+}
+
+.btn__link {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  transition: color 0.5s ease-in;
+}
+
+.btn__link:hover {
+  color: rgb(131, 19, 19);
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .menu {
+    justify-content: center;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .menu__item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 319px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu__item {
+    font-size: 14px;
+  }
+}
+
+.bg-blue {
+  background-color: #007bff;
+}
+.p-4 {
+  padding: 1rem;
+}
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
